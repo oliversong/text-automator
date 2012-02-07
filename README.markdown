@@ -25,3 +25,13 @@ The proper syntax for reminders is: "Remind me to X in/at Y".
 -  Make the replies friendlier
 -  "12:00" bug
 -  Process X hours and Y minutes query
+
+###How to actually use it
+1. Go to the website linked above
+2. Install the google voice api
+3. If you're on linux, you can do this with *sudo easy_install -U pygooglevoice*
+4. Setup your google voice info in the ~/.gvoice file.
+5. The actual file that checks messages and sends texts is analyzer.py
+6. run.sh runs everything sequentially
+7. server.sh is a makeshift server that queries google voice every minute for new texts
+8. Get crackin'
