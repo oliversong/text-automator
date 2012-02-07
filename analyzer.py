@@ -40,7 +40,7 @@ def timeparser(time,target,tog):
       #print x,ap
       if ap.lower()=='am':
         if int(x)>int(new):
-          if int(timematch.group(1))==12:
+          if int(timematch.group(1))==12:  # BUG. IF IT'S 12 AND THE TARGTIME IS ALSO 12, SHOULD BE SAME UNLESS ALREADY PAST
             dtime=dparser.parse(target+"AM")
             return dtime.strftime('%H:%M')
           else:
@@ -145,7 +145,7 @@ for item in sortd:
     print "\n  Time match!\n"
     currents.append(item)
   else:
-    print "\n  It isn't the time...\n"
+    print "\n  Question is in the queue. Listening...\n"
 print "currents",currents
 for current in currents:
   voice=Voice()
