@@ -4,7 +4,7 @@ Text Automator v0.1
 A framework for doing things with texts
 ---------------------------------------
 
-This is a framework based on the Google Voice API in python that you can find [here](http://code.google.com/p/pygooglevoice/)
+This is a framework based on the Google Voice API in python that you can find [here](http://code.google.com/p/pygooglevoice/).
 Currently only reminders are implemented.
 
 To test out the reminder service, all you have to do is text your request to 201-308-3785.
@@ -35,3 +35,7 @@ The proper syntax for reminders is: "Remind me to X in/at Y".
 6. run.sh runs everything sequentially
 7. server.sh is a makeshift server that queries google voice every minute for new texts
 8. Get crackin'
+
+###Ideas for the future
+-  "GPS". Text your current intersection or address and the destination address and it will text back a list of directions
+-  Alarm clock. Text "Wake me up at X time" and it will call you at that time
