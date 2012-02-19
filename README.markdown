@@ -39,3 +39,5 @@ The proper syntax for reminders is: "Remind me to X in/at Y".
 ###Ideas for the future
 -  "GPS". Text your current intersection or address and the destination address and it will text back a list of directions
 -  Alarm clock. Text "Wake me up at X time" and it will call you at that time
+-  Translator
+-  Weather
